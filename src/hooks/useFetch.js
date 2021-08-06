@@ -31,6 +31,9 @@ export const useFetch = (url) => {
                
                 
             })
+            .catch ( () => {
+                setState({data:null, loading:false, error:"Couldn't get data"})
+            })
     }, [url])
     return state;
 }
