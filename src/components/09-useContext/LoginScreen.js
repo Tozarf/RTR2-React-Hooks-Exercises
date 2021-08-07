@@ -5,7 +5,6 @@ export const LoginScreen = () => {
 
     const {setUser,user} = useContext(UserContext)
 
-    console.log(user)
     return (
         <>
             <h1>Login Screen</h1>
